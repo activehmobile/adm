@@ -45,7 +45,6 @@ namespace ActiveH_Device_Manager
                 {
                     string socketId = wscm.GetId(webSocket);
                     await wscm.RemoveSocket(socketId);
-                    //await webSocket.CloseAsync(WebSocketCloseStatus.NormalClosure, string.Empty, cancellationToken);
                 }
                 else
                 {

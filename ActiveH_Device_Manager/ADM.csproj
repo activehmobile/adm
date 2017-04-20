@@ -196,16 +196,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Classes\WebsocketConnectionManager.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ButtonsController.cs" />
-    <Compile Include="Controllers\CalendarController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
-    <Compile Include="Controllers\EditorsController.cs" />
-    <Compile Include="Controllers\FormsController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\InterfaceController.cs" />
-    <Compile Include="Controllers\StatisticsController.cs" />
-    <Compile Include="Controllers\TablesController.cs" />
+    <Compile Include="Controllers\DeviceDetailController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1712,12 +1704,10 @@
     <Content Include="Scripts\twitter-bootstrap-hover-dropdown.js" />
     <Content Include="Scripts\twitter-bootstrap-hover-dropdown.min.js" />
     <None Include="Scripts\_references.js" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\DeviceDetail\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Web.config" />
@@ -1727,16 +1717,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Buttons\Index.cshtml" />
-    <Content Include="Views\Calendar\Index.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
-    <Content Include="Views\Editors\Index.cshtml" />
-    <Content Include="Views\Forms\Index.cshtml" />
-    <Content Include="Views\Interface\Index.cshtml" />
     <Content Include="Views\Shared\_Landing.cshtml" />
     <Content Include="Views\Shared\_LeftMenu.cshtml" />
-    <Content Include="Views\Statistics\Index.cshtml" />
-    <Content Include="Views\Tables\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
