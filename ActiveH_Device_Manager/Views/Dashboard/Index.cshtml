@@ -1,0 +1,62 @@
+﻿@model  ActiveH_Device_Manager.Models.VmDashboard
+@{
+    ViewBag.Title = "Dashboard";
+}
+@Styles.Render("~/Content/Vendors")
+
+<!-- content -->
+<div class="col-md-10">
+    <div class="row">
+        <div class="panel panel-default bootstrap-admin-no-table-panel">
+            <div class="panel-heading">
+                <div class="text-muted bootstrap-admin-box-title">Summary</div>
+            </div>
+            <div class="bootstrap-admin-panel-content bootstrap-admin-no-table-panel-content collapse in">
+                <div class="col-md-3">
+                    <div class="easyPieChart" data-percent="@Model.ConnectedSockets" style="width: 110px; height: 110px; line-height: 110px;">@Model.ConnectedSockets<canvas width="110" height="110"></canvas></div>
+                    <div class="chart-bottom-heading"><span class="label label-info">Connected</span></div>
+                </div>
+                <div class="col-md-3">
+                    <div class="easyPieChart" data-percent="@Model.ConnectedSockets" style="width: 110px; height: 110px; line-height: 110px;">@Model.ConnectedSockets<canvas width="110" height="110"></canvas></div>
+                    <div class="chart-bottom-heading"><span class="label label-info">Connected</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row bootstrap-admin-no-edges-padding">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="text-muted bootstrap-admin-box-title">Devices</div>
+                </div>
+                <div class="bootstrap-admin-panel-content">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/vendors")
+
+    <script type="text/javascript">
+        $(function () {
+            // Easy pie charts
+            $('.easyPieChart').easyPieChart({ animate: 1000 });
+        });
+    </script>
+}

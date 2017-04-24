@@ -12,7 +12,7 @@ namespace ActiveH_Device_Manager
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            routes.IgnoreRoute("ADM/WSHttpHandler.ashx");
+            routes.IgnoreRoute("{resource}.ashx");
 
             routes.MapRoute(
                 name: "Default",
